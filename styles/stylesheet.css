@@ -9,6 +9,7 @@ body {
 
 .main {
     grid-column: 2/3;
+    /* display: flex; */
 }
 
 .notes {
@@ -17,6 +18,14 @@ body {
 
 }
 
-h2 {
+h1, h2 {
     text-align: center;
+}
+
+.text_box {
+    background-color: white;
+    border: 2px solid lightblue;
+    margin: 15px;
+    padding: 10px 0px 80px 10px;
+
 }
