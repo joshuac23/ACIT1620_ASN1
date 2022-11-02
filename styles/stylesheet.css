@@ -1,0 +1,21 @@
+body {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    margin: 0 0;
+}
+
+.main {
+    grid-column: 2/3;
+}
+
+.notes {
+    grid-row: 1/2;
+    background-color: white;
+
+}
+
+h2 {
+    text-align: center;
+}
