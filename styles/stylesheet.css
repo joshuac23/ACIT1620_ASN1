@@ -27,7 +27,7 @@ h1, h2 {
 .text_box {
     background-color: #f9f4ec;
     border: 2px solid lightblue;
-    height: 100px;
+    height: 200px;
     margin: 15px;
     padding: 10px 10px;
 
@@ -79,4 +79,7 @@ nav > div {
 
 footer {
     text-align: center;
+    position: fixed;
+    bottom: 0%;
+    right: 33%;
 }
