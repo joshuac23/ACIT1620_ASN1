@@ -55,8 +55,28 @@ h1, h2 {
 
 .cancel {
     background-color: #cf827b; 
+    display: flex;
 }
 
-/* footer {
-    display: grid;
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > div {
+    margin: 10px;
+}
+
+.bottom_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .links {
+    display: ;
 } */
