@@ -89,13 +89,17 @@ footer {
 
 @media screen and (max-width: 500px){
     .text_box {
-        height: 40vh;
+        height: 35vh;
+    }
+
+    .notes ul {
+        padding-left: 25px;
     }
 }
 
 
-@media screen and (max-width: 500px){
-    .notes ul {
-        padding-left: 25px;
+@media screen and (max-width: 400px){
+    body {
+        font-size: small;
     }
 }
