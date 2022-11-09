@@ -17,7 +17,10 @@ body {
 .notes {
     grid-row: 1/2;
     background-color: #f9f4ec;
+}
 
+ul {
+    list-style: square;
 }
 
 h1, h2 {
@@ -27,7 +30,7 @@ h1, h2 {
 .text_box {
     background-color: #f9f4ec;
     border: 2px solid lightblue;
-    height: 200px;
+    height: 20vh;
     margin: 15px;
     padding: 10px 10px;
 
@@ -82,4 +85,17 @@ footer {
     position: fixed;
     bottom: 0%;
     right: 33%;
+}
+
+@media screen and (max-width: 500px){
+    .text_box {
+        height: 40vh;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .notes ul {
+        padding-left: 25px;
+    }
 }
