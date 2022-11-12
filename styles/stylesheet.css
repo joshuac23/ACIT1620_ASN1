@@ -8,6 +8,12 @@ body {
     margin: 0 0;
 }
 
+button {
+    font-family: inherit;
+    border: none;
+    cursor:pointer;
+}
+
 .main {
     grid-column: 2/3;
     /* display: flex; */
@@ -27,14 +33,23 @@ h1, h2 {
     text-align: center;
 }
 
+
+.text_container {
+    display: flex;
+}
+
+
 .text_box {
     background-color: #f9f4ec;
     border: 2px solid lightblue;
+    display: inline-block;
     height: 20vh;
+    width: 100%; 
     margin: 15px;
     padding: 10px 10px;
 
 }
+
 
 #button {
     padding: 10px;
