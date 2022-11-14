@@ -16,7 +16,6 @@ button {
 
 .main {
     grid-column: 2/3;
-    /* display: flex; */
     
 }
 
@@ -102,7 +101,7 @@ footer {
     right: 33%;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 670px){
     .text_box {
         height: 35vh;
     }
