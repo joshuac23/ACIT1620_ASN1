@@ -3,20 +3,21 @@ body {
     color: #00478A;
     background-color: #f1e9dd;
     display: grid;
-    grid-template-columns: 1fr 4fr;
     height: 100vh;
     margin: 0 0;
+    grid-template-rows: 1fr 3fr 1fr;
 }
 
 button {
     font-family: inherit;
     border: none;
     cursor:pointer;
-}
 
-.main {
-    grid-column: 2/3;
-    
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    color: white;
 }
 
 .notes {
@@ -24,8 +25,23 @@ button {
     background-color: #f9f4ec;
 }
 
+.main {
+    grid-row: 2/3;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-row: 3/4;
+}
+
+
 ul {
     list-style: square;
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0px;
 }
 
 h1, h2 {
@@ -47,15 +63,6 @@ h1, h2 {
     margin: 15px;
     padding: 10px 10px;
 
-}
-
-
-#button {
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 8px;
-    color: white;
 }
 
 .top {
@@ -97,23 +104,22 @@ nav > div {
 footer {
     text-align: center;
     position: fixed;
-    bottom: 0%;
-    right: 33%;
-}
-
-@media screen and (max-width: 670px){
-    .text_box {
-        height: 35vh;
-    }
-
-    .notes ul {
-        padding-left: 25px;
-    }
 }
 
 
-@media screen and (max-width: 400px){
+
+@media screen and (min-width: 670px){
     body {
-        font-size: small;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr; 
+    }
+
+    ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    footer {
+        right: 33%;
     }
 }
