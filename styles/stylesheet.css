@@ -70,15 +70,15 @@ h1, h2 {
 }
 
 .new_note, .save {
-    background-color: #6194a0;
+    background-color: #00478A;
 }
 
 .dark_theme {
-    background-color: #6e6987;
+    background-color: #46406D;
 }
 
 .cancel {
-    background-color: #cf827b; 
+    background-color: #78322B; 
     display: flex;
 }
 
