@@ -48,7 +48,7 @@ h1, h2 {
     text-align: center;
 }
 
-
+/* project 2: change display to none */
 .text_container {
     display: flex;
 }
@@ -106,7 +106,16 @@ footer {
     position: fixed;
 }
 
+/* link with JS */
+.dark_mode {
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
 
+.dark_mode2 {
+    background-color: rgb(78, 75, 75);
+    color: white
+}
 
 @media screen and (min-width: 670px){
     body {
