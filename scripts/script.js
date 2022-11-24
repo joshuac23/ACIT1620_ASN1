@@ -6,9 +6,11 @@ const textarea = document.querySelector("textarea");
 
 const textbox = document.querySelector(".text_container")
 const cancelButton = document.querySelector(".cancel");
-const saveButton = document.querySelector(".save")
+const saveButton = document.querySelector(".save");
 
-const newNoteButton = document.querySelector(".new_note")
+const newNoteButton = document.querySelector(".new_note");
+
+const listOfNotes = document.querySelector("ul");
 
 let notes_list = [
     {title: "note one", body: "this is my first note"},
@@ -62,8 +64,14 @@ function saveTextEntry () {
     // create note entry
     note_entry.title = user_title;
     note_entry.body = textarea.value;
+
     // add note entry to note array ("note list")
     notes_list.push(note_entry);
+
+    // add to new entry My Notes section
+    const newEntry = document.createElement("li");
+    newEntry.textContent = user_title; // give new list item name specified by the user
+    listOfNotes.appendChild(newEntry);
 }
 
 saveButton.addEventListener("click", saveTextEntry)
