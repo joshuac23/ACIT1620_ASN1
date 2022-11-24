@@ -11,6 +11,8 @@ const saveButton = document.querySelector(".save");
 const newNoteButton = document.querySelector(".new_note");
 
 const listOfNotes = document.querySelector("ul");
+const defaultNote1 = document.querySelector(".default_note1");
+const defaultNote2 = document.querySelector(".default_note2");
 
 let notes_list = [
     {title: "note one", body: "this is my first note"},
@@ -85,17 +87,16 @@ saveButton.addEventListener("click", saveTextEntry)
 
 // displaying saved note
 function showNote(event) {
-    // console.log("Clicked!") // for debugging
-    // console.log(event.target.innerText) // for debugging
     let search_title = event.target.innerText;
     for (obj of notes_list) {
         if (search_title === obj.title) {
             textarea.value = obj.body;
-            // console.log(obj.body) // for debugging 
             break;
         }
     }
 }
 
+defaultNote1.addEventListener("click", showNote);
+defaultNote2.addEventListener("click", showNote);
 
 
