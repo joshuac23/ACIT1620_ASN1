@@ -17,10 +17,10 @@ let notes_list = [
     {title: "note two", body: "this is my second note"}
 ]
 
-let note_entry = {
-    title: "",
-    body: ""
-}
+// let note_entry = {
+//     title: "",
+//     body: ""
+// }
 
 // creating Dark Theme button functionality
 function darkMode () {
@@ -61,6 +61,11 @@ newNoteButton.addEventListener("click", newNote);
 
 function saveTextEntry () {
     let user_title = prompt("Give your note a title");
+    let note_entry = {
+        title: "",
+        body: ""
+    }
+
     // create note entry
     note_entry.title = user_title;
     note_entry.body = textarea.value;
@@ -72,7 +77,25 @@ function saveTextEntry () {
     const newEntry = document.createElement("li");
     newEntry.textContent = user_title; // give new list item name specified by the user
     listOfNotes.appendChild(newEntry);
+    newEntry.addEventListener("click", showNote)
 }
 
 saveButton.addEventListener("click", saveTextEntry)
+
+
+// displaying saved note
+function showNote(event) {
+    // console.log("Clicked!") // for debugging
+    // console.log(event.target.innerText) // for debugging
+    let search_title = event.target.innerText;
+    for (obj of notes_list) {
+        if (search_title === obj.title) {
+            textarea.value = obj.body;
+            // console.log(obj.body) // for debugging 
+            break;
+        }
+    }
+}
+
+
 
