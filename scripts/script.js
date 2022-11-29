@@ -69,17 +69,20 @@ function saveTextEntry () {
     }
 
     // create note entry
-    note_entry.title = user_title;
-    note_entry.body = textarea.value;
+    if (user_title!=null) {
+        note_entry.title = user_title;
+        note_entry.body = textarea.value;
 
-    // add note entry to note array ("note list")
-    notes_list.push(note_entry);
+        // add note entry to note array ("note list")
+        notes_list.push(note_entry);
+    
 
-    // add to new entry My Notes section
-    const newEntry = document.createElement("li");
-    newEntry.textContent = user_title; // give new list item name specified by the user
-    listOfNotes.appendChild(newEntry);
-    newEntry.addEventListener("click", showNote)
+        // add to new entry My Notes section
+        const newEntry = document.createElement("li");
+        newEntry.textContent = user_title; // give new list item name specified by the user
+        listOfNotes.appendChild(newEntry);
+        newEntry.addEventListener("click", showNote)
+    }
 }
 
 saveButton.addEventListener("click", saveTextEntry)
