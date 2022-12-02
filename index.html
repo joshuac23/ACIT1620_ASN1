@@ -8,32 +8,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
     <title>TakeBetterNotes</title>
 </head>
 
 
 <body>
+    <header>
+        <h1>Take Better Notes</h1>
+
+        <nav>
+            <div>About</div>
+            <div>Docs</div>
+        </nav>
+
+    </header>
+
+    <aside class="notes">
+        <h2>My Notes</h2>
+        <ul>
+            <li class="default_note1">note one</li>
+            <li class="default_note2">note two</li>
+        </ul>
+    </aside>
+
     <main> 
         <section class="main">
-            <h1>Take Better Notes</h1>
-
-            <nav>
-                <div>About</div>
-                <div>Docs</div>
-            </nav>
-            
             <div class="top_buttons">
                 <button class="new_note" type="button">
                     New Note
                 </button>
 
-                <button class="dark_theme" type="button">
-                    Dark Theme
-                </button>
+                <button class="dark_theme" type="button">Dark Theme</button>
             </div>
 
             <div class="text_container">
-                <textarea class="text_box" name="user_input" rows="5" cols="33">This is a place holder...</textarea>
+                <textarea class="text_box" name="user_input" rows="5" cols="33" placeholder="This is a place holder..."></textarea>
             </div>
             
             <div class="bottom_buttons">
@@ -49,23 +59,12 @@
         </section>
     </main>
 
-    
-    <aside class="notes">
-        <h2>My Notes</h2>
-        <ul>
-            <li>note one</li>
-            <li>note two</li>
-        </ul>
-    </aside>
+    <footer class="links">
+        <div>Keep in Touch</div>
+        <a href="https://www.linkedin.com/home?originalSubdomain=ca"><img src="misc/linkedin_circle_color-512.webp" alt="linkedin_logo" height="40"></a>
+        <a href="https://www.google.com/"><img src="misc/Internet_Line-02-512.webp" alt="internet_logo" height="40"></a>
+    </footer>
 
-    <div class="footer_container">
-        <footer class="links">
-            <div>Keep in Touch</div>
-            <!-- fix size (?) -->
-            <a href="https://www.linkedin.com/home?originalSubdomain=ca"><img src="misc/linkedin_circle_color-512.webp" alt="linkedin_logo" height="40"></a>
-            <a href="https://www.google.com/"><img src="misc/Internet_Line-02-512.webp" alt="internet_logo" height="40"></a>
-        </footer>
-    </div>
 
 </body>
 </html>
